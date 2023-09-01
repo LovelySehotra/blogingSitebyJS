@@ -1,0 +1,23 @@
+/* Add some basic styling here */
+.nav-container {
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+#blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-post {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.nav-list {
+    color: blue;
+    text-decoration: none;
+    margin-right: 10px; /* Add other styles as needed */
+}
