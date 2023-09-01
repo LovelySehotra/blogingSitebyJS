@@ -7,34 +7,45 @@
 
 // // Append the div to the body of the page
 // document.body.appendChild(divElement);
-const navBar=document.getElementById('navbar')
+const navBar = document.getElementById('navbar')
 const postNav = document.createElement('div');
-// postNav.style.backgroundColor='gray';
-// postNav.style.color='white';
-// postNav.style.display='flex';
-// postNav.style.alignItems='center';
-// postNav.style.justifyContent='space-evenly';
-// postNav.style.padding='5px';
 
-postNav.className ='nav-container';
-postNav.innerHTML=`
-<a href="#" class="nav-list">Home</a>
+
+postNav.className = 'nav';
+postNav.innerHTML = `
+        <div class="nav-container">
+        <div class="logo"><img src="./assest/logo_mockup.jpg"/></div>
+        <div class="navlist">
+        <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-        <div class="search">
-        <input type="text"/> Search</div>
+        </div>
+        <button>Get Started</button>
+        </div>
+        <hr>
 
+        <div class="nav-bottom">
+        <div class="nav-bottom-left">
+            <h1>Stay Curious</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fuga.</p>
+            <div><button>Start Learning</button></div>
+        </div>
+        <div class="nav-bottom-right">
+            <img src="./assest/background-img.jpg" alt="">
+        </div>
+    </div>
+ 
 `;
 navBar.appendChild(postNav);
 
 
 
 
-// const postDiv = document.createElement('div');
-//         postDiv.className = 'blog-post';
-//         postDiv.innerHTML = `
-//             <h3>Post ${index + 1}</h3>
-//             <p>${post.content}</p>
-//             <p>Date: ${post.date}</p>
-//         `;
-//         blogPostsContainer.appendChild(postDiv);
+const postDiv = document.createElement('div');
+        postDiv.className = 'blog-post';
+        postDiv.innerHTML = `
+            <h3>Post ${index + 1}</h3>
+            <p>${post.content}</p>
+            <p>Date: ${post.date}</p>
+        `;
+        blogPostsContainer.appendChild(postDiv);

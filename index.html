@@ -10,14 +10,32 @@
     <nav id="navbar">
 
     </nav>
-    <div id="blog-container">
-        <h1>My Blog</h1>
-        <div id="blog-posts"></div>
-        <h2>Create a New Blog Post</h2>
-        <textarea id="blog-content" rows="5" cols="50" placeholder="Write your blog post here"></textarea>
-        <br>
-        <button onclick="createBlogPost()">Create Post</button>
+    
+    <div class="blog-box">
+
+        <div id="blog-container">
+           
+            <div id="blog-posts"></div>
+            <h2>Create a New Blog Post</h2>
+            <label for="title">Title</label>
+            <input id="title" type="text" >
+            <br>
+            <label for="author">Author</label>
+            <input id="author" type="text" >
+            <br>
+            <label for="blog-content">Content</label>
+            <textarea id="blog-content" rows="5" cols="50" placeholder="Write your blog post here"></textarea>
+            <br>
+            <button onclick="createBlogPost()">Create Post</button>
+        </div>
+        <div class="blog-img">
+            <img src="./assest/article1.jpg" alt="">
+        </div>
     </div>
+    <div id="post-blog">
+         
+    </div>
+  
 <script src="./script/index.js"></script>
 <script src="./script/navbar.js"></script>
 </body>

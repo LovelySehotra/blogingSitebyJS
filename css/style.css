@@ -1,23 +1,129 @@
 /* Add some basic styling here */
-.nav-container {
-  background-color: red;
-  display: flex;
-  justify-content: space-evenly;
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: Arial, sans-serif;
+  background-color: rgb(251, 195, 67);
+  /* background-image: url(../assest/backgound2.jpg); */
+}
+
+.nav {
+  /* background-color: rgb(154, 123, 123); */
+  display: flex;
+  flex-direction: column;
+
+  /* border-radius: 20px; */
+}
+.nav-container {
+  /* background-color: rgb(154, 123, 123); */
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border-radius: 20px; */
+}
+.logo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30px;
+}
+.navlist {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 80px;
+}
+.navlist a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+button {
+  color: rgb(11, 1, 1);
+  background-color: rgb(227, 189, 36);
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+hr {
+  margin-top: 5px;
+  height: 2px;
+  border-width: 0;
+  color: rgb(23, 22, 22);
+  background-color: rgb(23, 22, 22);
+  /* height: 10px; */
+}
+.nav-bottom {
+  /* background-image: url(../assest/background-img.jpg); */
+  background-color: #f0ebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 40px;
+  height: 20rem;
+  border-radius: 20px;
+}
+
+.nav-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-bottom-left h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.nav-bottom-right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+.blog-box {
+  /* background-color: rgb(245, 224, 120); */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  height: 300px;
+}
+#title {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(240, 240, 234, 0.793);
+}
+#author {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(240, 240, 234, 0.793);
 }
 #blog-container {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.blog-post {
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
+.blog-img {
+  width: 200px;
+  height: 200px;
+}
+.blog-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 80px;
+}
+#blog-content {
+  border-radius: 20px;
   padding: 10px;
+  background-color: rgba(240, 240, 234, 0.793);
 }
-.nav-list {
-    color: blue;
-    text-decoration: none;
-    margin-right: 10px; /* Add other styles as needed */
+.post-blog {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(237, 210, 210);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
